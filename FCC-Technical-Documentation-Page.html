@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Beginner's Guide to CSS </title>
+    <link rel="stylesheet" href="FCC-Technical-Documentation-Page.css">
+  </head>
+  <body>
+<div id="side-nav">
+<nav id="navbar">
+  <header><h1>Beginner's Guide to CSS</h1><img src="https://img.freepik.com/free-icon/css_318-698167.jpg" class="logo"></img></header>
+       <a href="#What_is_CSS?" class="nav-link">What is CSS?</a>
+       <a href="#Prerequisite_Knowledge" class="nav-link">Prerequisite Knowledge</a>
+       <a href="#Getting_Started" class="nav-link">Getting Started</a>
+
+       <a href="#Font_Styling" class="nav-link">Font Styling</a>
+          <a href="#The_Box-Model" class="nav-link">The Box-Model</a>
+            <a href="#Adding_Colour" class="nav-link">Adding Colour</a>
+              <a href="#Selectors" class="nav-link">Selectors</a>
+                <a href="#Learn_More..." class="nav-link">Learn More...</a>
+
+        
+      </nav>
+
+
+      </div>
+<main id="main-doc">
+  
+  
+  <section class="main-section" id ="What_is_CSS?">
+    <header><h2>What is CSS?</h2></header>
+<div>
+   <p>CSS stands for cascading style sheets.  It allows you to customise the appearance of an HTML document.  It is used to set the properties of elements on a web page, such as the background colour, font size, margins and much more.  </p>
+   <p>Although it would be possible to create a layout for a webpage using only html, CSS is a great way to ensure consistent design across a webpage.  It also allows you to target multiple elements of the same type (more on this in the <a href="#Selectors" class="in-text">selectors</a> section).</p>
+   </div>
+  </section>
+
+    <section class="main-section" id="Prerequisite_Knowledge">
+    <header>
+<h2>Prerequisite Knowledge</h2>      </header>
+<div>
+   <p>Since CSS is a style sheet programming language, the most important thing to know already is how to create an HTML document.  Once you know how to create headings, paragraphs and divisions in your HTML document, you can begin using CSS to improve the appearance of your HTML page.  You'll also want a basic understanding of how to use <code>&lthref&gt</code> in order to link your fancy new stylsheet to your html page.  </p>
+<p>Similar to learning any new language, the key to mastering CSS is consistent practice and applying your skills.  It's a good idea to have some plan as to what you want to learn or build so you can make sure you're on the right track.
+   </div>
+  </section>
+
+
+    <section class="main-section" id="Getting_Started">
+    <header>
+      <h2>Getting Started</h2>
+    </header>
+    <div>
+   <p>The first thing you'll need to do is link your html code to your CSS code.  This is pretty straightforward, just use an href like you would to link to a webpage, but instead you link it to to your stylesheet.    Usually you'll place this link in the head section of your page.  It's also good practice to describe the relationship to the .css file, using the <code>rel="stylesheet"</code> syntax.  </p>
+<p>So in bullet point form to satisfy 'the man' at freeCodeCamp:
+  <ul><li>First, create the html for your page (depending on your layout you might want to start working on your css alongside it!)</li>
+  <li>Link your html file to your CSS file.  Don't forget to describe the relationship using <code>rel</code> syntax.</li>
+  <li>Use CSS to style your fonts, layouts, colours and more.  This is typically done using a <a href="#Selectors" class="in-text">selector</a> of some kind.</li>
+</p>
+  </ul>
+  <p>Once you've selected the part of your code you wish to format, for example your <code>h1</code> text, you can start to format it using CSS.  Let's say you wanted your <code>h1</code> to be a bit larger with white text on a blue background, your CSS would look like this.
+  </p>
+  <div class="codefield">
+    <code>h1 {<br />font-size: 2.5rem;<br />
+    background-color: blue;<br />
+    color: white<br />}</code>
+      
+    </div>
+   </div>
+  </section>
+
+
+
+    <section class="main-section" id="Font_Styling">
+    <header>
+      <h2>Font Styling</h2>
+      </header>
+
+      <div>
+   <p>CSS allows you to make changes to font styles across your webpage.  Here are a few things you can change:
+  <ul><li>The font color, by using <code>color</code></li>
+  <li>The font size, using (shocker) <code>font-size</code></li>
+  <li>The font family, using <code>font-family</code>. It's good practice to include back-up fonts too, as follows: </li>
+  </ul>
+  <code>h1 {<br />font-size: 2.5rem;<br />
+    font-family: Helvetica, sans-serif}</code>
+
+    <p>It's important to include back-ups like this when writing CSS in case the browser or device the user has displays the content slightly differently.</p>
+   </div>
+  </section>
+
+
+  
+    <section class="main-section" id="The_Box-Model">
+    <header>
+      <h2>The Box-Model</h2>
+    </header>
+    <div>
+  <p> CSS wraps a box around every element in your HTML.   Here's a great image to illustrate how the box-model works:</p>
+  <img src="https://miro.medium.com/v2/resize:fit:970/0*5qeKw4RhW1BxgEMx.png" class="box-model">
+  <p>There are 4 sections to the box-model, going from outside to inside: <p>
+    <ol>
+      <li><span class="list-heading">Margin:</span> clears a transparent area outside the border.</li>
+      <li><span class="list-heading">Border:</span> inside the margin, around the padding and the content.  The border can be given a particular colour, weight and style using CSS.</li>
+      <li><span class="list-heading">Padding:</span> A transparent area around your content inside the border.  Great for making text stand out!</li>
+      <li><span class="list-heading">Content:</span> Your exciting content containing text or images.</li>
+      </ol>
+   </div>
+  </section>
+
+
+
+    <section class="main-section" id="Adding_Colour">
+    <header>
+      <h2>Adding Colour</h2>
+    </header>
+    <div>
+   <p>CSS allows you to add a range of colour styles to your web page.  Even though it was created by a Norwegian, an Englishman, and a Belgian you need to spell colour wrong everytime you use it.  </p>
+      <p>CSS allows you to define a colour in three ways: </p>
+<table>
+  <tr><td>RGB </td><td> rgb(89,149,219)</td></tr>
+  <tr><td>HEX</td><td>#5995db</tr>
+  <tr><td>HSL</td><td>212,64,60</td></tr>
+</table>
+<p>Each of these codes mean the same shade of blue in the table.  RGB and HEX are the most commonly used.
+   </div>
+  </section>
+
+
+
+    <section class="main-section" id="Selectors">
+    <header><h2>Selectors</h2></header>
+    <div>
+   <p>Selectors tell your CSS where to work its magic.  You can use a simple selector to select elements based on their name, id or class:</p>
+<table class="selector">
+     <thead><tr>
+       <td>Type</td>
+       <td>Example</td>
+       <td>Selector</td>
+       </tr></thead>
+     <tbody>
+       <tr>
+         <td>Element</td><td><code>&lth2&gt</code></td><td>h2</td></tr>
+     <tr>
+       <td>Class</td>
+     <td><code>&ltdiv class="big-box"&gt</code></td>
+     <td><span class="strong">.</span>big-box
+     </tr>
+     <tr>
+       <td>ID</td>
+       <td><code>&ltdiv id="client"&gt</code></td>
+     <td><span class="strong">#</span>client
+       </tr>
+     </tbody>
+     </table>
+     <p>More advanced selectors exist, such as combinator selectors (based on a specific relationship between elements), or pseudo-class selectors (based on a certain state of elements).  See the link below for some examples of these more complex CSS tools.</p>  
+   </div>
+  </section>
+
+
+
+    <section class="main-section" id="Learn_More...">
+     <header><h2>Learn More...</h2></header>
+     <div>
+   <p>If you want to learn more about the exciting world of CSS, click <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/">here</a>
+   </div>
+  </section>
+
+
+
+      
+      </main>
+        </body>
+</html>

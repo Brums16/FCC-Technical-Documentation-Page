@@ -1,0 +1,134 @@
+body {
+  font-family: Helvetica;
+
+}
+
+.logo {
+  max-width: 50px;
+  max-height: 50px;
+  margin-bottom: 20px
+
+
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+  font-weight: normal
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  font-weight: inherit
+}
+
+.nav-link {
+  all: inherit;
+  font-size: 1.5rem;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid black
+}
+
+a:hover{
+  cursor: pointer
+}
+
+#side-nav {
+  height:100%;
+  border-right: 3px solid black;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0
+}
+
+
+
+
+section
+{
+  padding-top: 10px
+}
+
+.nav-link, h1, img {
+  padding-left: 20px !IMPORTANT
+}
+
+main {
+  margin-left: 320px;
+  font-size: 1rem
+}
+
+code {
+  background-color: rgba(20,20,60,0.2)
+}
+
+.box-model {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  max-width: 500px
+ 
+}
+
+.list-heading {
+  font-weight: bold
+}
+
+table {
+  margin: auto
+}
+
+td {
+  padding: 5px;
+  background-color: #5995db;
+  color: white;
+  font-weight: bold
+  
+}
+
+thead td {
+  padding: 8px;
+  background-color: slategrey;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  
+}
+
+.selector tbody td {
+  background-color: white;
+  color: black;
+  font-weight: normal
+}
+
+.strong {
+  font-weight: bold
+}
+
+@media (max-width: 768px) {
+  #side-nav {
+  height:100%;
+  border-right: 3px solid black;
+  width: 150px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0
+}
+h1 {
+  font-size: 1.5rem
+}
+.nav-link {
+  font-size: 1rem
+}
+main {
+  margin-left: 170px;
+  font-size: 1rem
+}
+}
+
